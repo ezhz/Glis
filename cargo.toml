@@ -1,0 +1,18 @@
+
+[package]
+name = 'glis'
+version = '0.1.0'
+edition = '2021'
+
+[dependencies]
+anyhow = '=1.0.71'
+msgbox = '=0.7.0'
+notify = '=4.0.17'
+image = '=0.24.0'
+ogl = {path = 'src/ogl'}
+raw-gl-context = '=0.1.2'
+winit = '=0.26.1'
+
+[profile.release]
+strip = 'debuginfo'
+
